@@ -1,0 +1,25 @@
+.temp_msg h1 {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+    opacity: 0; /* hide the element by default */
+    animation: fadeIn 2s ease-in-out forwards; /* start the animation on page load */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* start with a completely transparent element */
+      transform: translateX(-50px); /* move the element 50 pixels to the left */
+    }
+    to {
+      opacity: 1; /* end with a fully visible element */
+      transform: translateX(0); /* move the element back to its original position */
+    }
+  }
+  

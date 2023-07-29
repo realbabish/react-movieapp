@@ -1,24 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState, useEffect } from 'react';
+import { Footer, Contact, Header} from './containers';
+import { Aboutme, Navbar } from './components';
+import Project from './components/project/Project.jsx'
+import constructionIcon from './assets/construction-icon.svg';
 
 function App() {
+  const [showLoading, setShowLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLoading(false);
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {showLoading ? (
+        <div className="loading">
+          <img src={constructionIcon} alt="Construction icon" className="loading-icon" />
+          <h1>"Pardon our dust! We're jazzing up a section of our website to make it even more awesome. Stay tuned for the funky new features we're cooking up!"</h1>
+        </div>
+      ) : (
+        <div className='App'>
+          <div className="gradient__bg">
+            <title>Babish</title>
+            <Navbar />
+            <Header />
+          </div>
+          <Contact />
+          <Aboutme />
+          <Project />
+          <Footer  />
+        </div>
+      )}
+    </>
   );
 }
 

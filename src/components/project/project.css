@@ -1,0 +1,10 @@
+.project-wrapper{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 2 6rem;
+    align-items: center;
+    padding: 2rem 6rem;
+}

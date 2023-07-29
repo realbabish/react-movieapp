@@ -1,0 +1,89 @@
+
+.Aboutme_main{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 2 6rem;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.Aboutme_main p{
+    font-size: 28px;
+    line-height: 30px;
+    word-spacing: 2px;
+}
+
+.Aboutme_main p:hover{
+    color: white;
+}
+
+
+.Aboutme__Content{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin: 2 6rem;
+    align-items: center;
+    padding: 2rem 6rem;
+    display: flex;
+}
+
+.Aboutme__TextContent{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 800;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin: 2 6rem;
+    align-items: center;
+    padding: 2rem 6rem;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.Aboutme__Animated-content{
+max-width: 60rem;
+animation: fadeIn 1s ease-in-out forwards;
+font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-text);
+    margin-top: 1.5rem;
+
+}
+
+.Aboutme__img img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media screen and (max-width: 650px) {
+    .Aboutme__Content{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .Aboutme__img{
+        height: 20%;
+    }
+    .title{
+        font-size: 36px;
+    }
+    .titleTwo{
+        font-size: 36px;
+    }
+    .Aboutme__aboutme{
+        font-size: 15px;
+    }
+
+    }
+    
